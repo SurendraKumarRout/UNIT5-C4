@@ -1,0 +1,6 @@
+export const SEARCH_RESULT = "SEARCH_RESULT";
+
+export const SORT_BY_ALPHABET = "SORT_BY_ALPHABET";
+export const SORT_BY_DATE = "SORT_BY_DATE";
+export const SORT_BY_QUALITY = "SORT_BY_QUALITY";
+
