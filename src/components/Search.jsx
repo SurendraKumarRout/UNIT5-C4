@@ -34,7 +34,7 @@ export const Search = () => {
       });
   };
 
-  const handleSortAlpha = () => {
+  const handleSortAlbhabet = () => {
     dispatch(sortAlphabet());
   };
 
@@ -50,8 +50,8 @@ export const Search = () => {
     <div id="searchpage">
       <Navbar input={query} />
       <div id="filter-sort">
-        <button id="sort-alphabetically" onClick={handleSortAlpha}>
-          Sort Alpha
+        <button id="sort-alphabetically" onClick={handleSortAlbhabet}>
+          Sort Alphabet
         </button>
         <button id="sort-by-date" onClick={handleSortDate}>
           Sort by Date
@@ -60,8 +60,11 @@ export const Search = () => {
           Sort by quality
         </button>
       </div>
-      <div id="search-result">
-        {data.map((el, i) => {
+          <div id="search-result">
+              
+              { data.map( ( el, i ) =>
+              {
+            
           return (
             <div className="result" key={i}>
               <Link className="title" to={`/page/${el.id}`}>
